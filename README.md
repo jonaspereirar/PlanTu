@@ -69,11 +69,14 @@ Feito com ♥ by team PlanTu :wave: Thaís Paixão, Rodrigo Marques, Jessica Bor
 
 Figma: https://www.figma.com/file/9qbk1fkHQ68XI1gYx1Dz2P/PlanTu?node-id=24%3A52
 
-<img src="https://github.com/jonaspereirar/callingapp/blob/master/feed.png?raw=true" width="800px" />
-<img src="https://github.com/jonaspereirar/callingapp/blob/master/perfil.png?raw=true" width="800px" />
-<img src="https://github.com/jonaspereirar/callingapp/blob/master/mapeamento.png?raw=true" width="800px" />
-<img src="https://github.com/jonaspereirar/callingapp/blob/master/perfilDoCadastro.png?raw=true" width="800px" />
-<img src="https://github.com/jonaspereirar/callingapp/blob/master/mapa.png?raw=true" width="800px" />
+https://github.com/jonaspereirar/callingapp/blob/jonas/feed.png
 
+https://github.com/jonaspereirar/callingapp/blob/jonas/mapa.png
+
+https://github.com/jonaspereirar/callingapp/blob/jonas/mapeamento.png
+
+https://github.com/jonaspereirar/callingapp/blob/jonas/perfil.png
+
+https://github.com/jonaspereirar/callingapp/blob/jonas/perfilDoCadastro.png
 
 
