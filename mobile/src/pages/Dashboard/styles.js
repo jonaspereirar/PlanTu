@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import Button from '~/components/ButtonTab';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -16,3 +17,8 @@ export const List = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
   contentContainerStyle: { padding: 30 },
 })``;
+
+export const AddButtonPlus = styled(Button)`
+  color: #fff;
+  size: 24px;
+`;
