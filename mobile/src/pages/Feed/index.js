@@ -1,9 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { FlatList, Image, TouchableOpacity } from 'react-native';
+import LottieView from 'lottie-react-native';
 
 import LazyImage from '~/components/LazyImage';
 import LazyImageUp from '~/components/LazyImageUp';
 import LazyImageLow from '~/components/LazyImageLow';
+
+// import Lotties from '~/assets/lottie/Like.json';
 
 import LikeIcon from '~/assets/TabPost/Like.png';
 import CommentIcon from '~/assets/TabPost/Comment.png';
@@ -24,11 +27,14 @@ import {
 } from './styles';
 
 export default function Feed() {
+  // const animation = useRef(null);
+  // const isFirstRun = useRef(true);
   const [feed, setFeed] = useState([]);
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+
   const [viewable, setViewable] = useState([]);
 
   async function loadPage(pageNumber = page, shouldRefresh = false) {
@@ -62,6 +68,21 @@ export default function Feed() {
   useEffect(() => {
     loadPage();
   }, []);
+
+  // useEffect(() => {
+  //   if (isFirstRun.current) {
+  //     if (isLiked) {
+  //       animation.current.play(66, 66);
+  //     } else {
+  //       animation.current.play(19, 19);
+  //     }
+  //     isFirstRun.current = false;
+  //   } else if (isLiked) {
+  //     animation.current.play(19, 50);
+  //   } else {
+  //     animation.current.play(0, 19);
+  //   }
+  // }, [isLiked]);
 
   const handleViewableChanged = useCallback(({ changed }) => {
     setViewable(changed.map(({ item }) => item.id));
@@ -116,14 +137,27 @@ export default function Feed() {
                 </TouchableOpacity>
               </TabIconSave>
               <TabIcon>
-                <TouchableOpacity style={{ marginRight: 30 }}>
-                  <Image source={LikeIcon} width={64} height={64} />
+                <TouchableOpacity
+                  style={{ marginRight: -30 }}
+                  onPress={() => {}}
+                >
+                  <LottieView
+                    // ref={animation}
+                    style={{ marginLeft: -30, width: 64, height: 64 }}
+                    source={require('~/assets/lottie/Like.json')}
+                    autoPlay
+                    loop
+                  />
                 </TouchableOpacity>
-                <NumberLike>{item.like}</NumberLike>
-                <TouchableOpacity style={{ marginRight: 30 }}>
+                <NumberLike style={{ marginLeft: -10, marginTop: 20 }}>
+                  {item.like}
+                </NumberLike>
+                <TouchableOpacity style={{ marginRight: 30, marginTop: 20 }}>
                   <Image source={CommentIcon} width={64} height={64} />
                 </TouchableOpacity>
-                <NumberComment>{item.comment}</NumberComment>
+                <NumberComment style={{ marginRight: 5, marginTop: 20 }}>
+                  {item.comment}
+                </NumberComment>
               </TabIcon>
             </TabPost>
           </Post>

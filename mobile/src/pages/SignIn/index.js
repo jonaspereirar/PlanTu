@@ -10,6 +10,7 @@ import { signInRequest } from '~/store/modules/auth/actions';
 
 import {
   Container,
+  ContainerLogo,
   Form,
   FormInput,
   SubmitButton,
@@ -31,8 +32,10 @@ export default function SignIn({ navigation }) {
 
   return (
     <Background>
-      <Container>
+      <ContainerLogo>
         <Image source={logo} />
+      </ContainerLogo>
+      <Container>
         <Form>
           <FormInput
             icon="mail-outline"
@@ -60,7 +63,7 @@ export default function SignIn({ navigation }) {
             Acessar
           </SubmitButton>
         </Form>
-        <SignLink onPress={() => navigation.navigate('SignUp')}>
+        <SignLink onPress={() => navigation.replace('SignUp')}>
           <SignLinkText> Criar conta gratuita</SignLinkText>
         </SignLink>
       </Container>
