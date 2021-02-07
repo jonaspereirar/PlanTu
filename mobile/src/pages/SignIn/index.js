@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Image } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
 
 import logo from '~/assets/logo.png';
 
@@ -10,7 +9,6 @@ import { signInRequest } from '~/store/modules/auth/actions';
 
 import {
   Container,
-  ContainerLogo,
   Form,
   FormInput,
   SubmitButton,
@@ -19,7 +17,7 @@ import {
 } from './styles';
 
 export default function SignIn({ navigation }) {
-  const loading = useSelector((state) => state.auth.loading);
+  const loading = useSelector(state => state.auth.loading);
   const passwordRef = useRef();
   const dispatch = useDispatch();
 
@@ -32,10 +30,8 @@ export default function SignIn({ navigation }) {
 
   return (
     <Background>
-      <ContainerLogo>
-        <Image source={logo} />
-      </ContainerLogo>
       <Container>
+        <Image source={logo} />
         <Form>
           <FormInput
             icon="mail-outline"
@@ -63,14 +59,10 @@ export default function SignIn({ navigation }) {
             Acessar
           </SubmitButton>
         </Form>
-        <SignLink onPress={() => navigation.replace('SignUp')}>
+        <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText> Criar conta gratuita</SignLinkText>
         </SignLink>
       </Container>
     </Background>
   );
 }
-
-SignIn.propTypes = {
-  navigation: PropTypes.shape({ replace: PropTypes.func }).isRequired,
-};
