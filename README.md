@@ -5,6 +5,9 @@
 <p align="center">Hackathon CCR 🚀🚀🚀</p>
 
 <p align="center">
+Somos a Plantu, uma startup de impacto social que pretende capacitar profissionalmente os jovens periféricos de 18 a 24 anos no setor de agricultura urbana - aumentando a renda e empregabilidade dessa parcela populacional. Nós conectamos sociedade civil e inovamos o espaço urbano através de Hortas Urbanas; criando um ecossistema de sustentabilidade, inclusão e empreendedorismo verde.
+</p>
+<p align="center">
   <a href="#-instalacao-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
