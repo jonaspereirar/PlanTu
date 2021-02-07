@@ -1,4 +1,4 @@
-import { enableES5, produce } from 'immer'
+import produce from 'immer';
 
 const INITIAL_STATE = {
   token: null,
@@ -7,7 +7,6 @@ const INITIAL_STATE = {
 };
 
 export default function auth(state = INITIAL_STATE, action) {
-  enableES5()
   return produce(state, draft => {
     switch (action.type) {
       case '@auth/SIGN_IN_REQUEST': {

@@ -12,12 +12,6 @@ export const Container = styled.KeyboardAvoidingView.attrs({
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  width: 90%;
-`;
-
-export const ContainerLogo = styled.View`
-  flex: 1;
-  justify-content: center;
 `;
 
 export const Form = styled.View`
@@ -38,7 +32,7 @@ export const SignLink = styled.TouchableOpacity`
 `;
 
 export const SignLinkText = styled.Text`
-  color: #333;
+  color: #fff;
   font-weight: bold;
   font-size: 16px;
 `;
