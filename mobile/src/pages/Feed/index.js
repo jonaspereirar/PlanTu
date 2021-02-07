@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FlatList, Image, TouchableOpacity } from 'react-native';
 import LottieView from 'lottie-react-native';
 
@@ -8,7 +8,7 @@ import LazyImageLow from '~/components/LazyImageLow';
 
 // import Lotties from '~/assets/lottie/Like.json';
 
-import LikeIcon from '~/assets/TabPost/Like.png';
+// import LikeIcon from '~/assets/TabPost/Like.png';
 import CommentIcon from '~/assets/TabPost/Comment.png';
 import SaveIcon from '~/assets/TabPost/Save.png';
 

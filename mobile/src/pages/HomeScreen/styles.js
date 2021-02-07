@@ -14,6 +14,7 @@ export const Header = styled.View`
   border: 4px solid #e5e5e5;
   width: 100%;
   height: 80px;
+  margin-top: 120px
 
   flex-direction: row;
   justify-content: space-between;
@@ -22,9 +23,13 @@ export const Header = styled.View`
 
 export const HeaderTitle = styled.View`
   margin-left: 20px;
+  margin-bottom: 20px;
 `;
 export const HeaderIcon = styled.View`
   flex: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px
 
   flex-direction: row;
   position: relative;

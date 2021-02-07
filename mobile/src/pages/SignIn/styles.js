@@ -18,6 +18,7 @@ export const Container = styled.KeyboardAvoidingView.attrs({
 export const ContainerLogo = styled.View`
   flex: 1;
   justify-content: center;
+  margin-top: 120px;
 `;
 
 export const Form = styled.View`
@@ -31,6 +32,7 @@ export const FormInput = styled(Input)`
 
 export const SubmitButton = styled(Button)`
   margin-top: 5px;
+  margin-bottom: 30px;
 `;
 
 export const SignLink = styled.TouchableOpacity`

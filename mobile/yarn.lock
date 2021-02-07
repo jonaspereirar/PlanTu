@@ -6733,6 +6733,13 @@ react-native-image-crop-picker@^0.35.2:
   resolved "https://registry.yarnpkg.com/react-native-image-crop-picker/-/react-native-image-crop-picker-0.35.3.tgz#cc9ae109ae5ac2d0877a0c5ac51935421a3651d8"
   integrity sha512-JMBmtfdJvxvPNTjSmiqNaBuEAqwwzyYvgvwiOU8ikIE113RD6hPV+wpxGFCqGJPzJF/JO6uEzpDOcFCfHZbmtQ==
 
+react-native-image-swiper@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-image-swiper/-/react-native-image-swiper-0.0.8.tgz#be503a7aef0a6d6fa4eeadb02200583676fe2456"
+  integrity sha512-//Dv7KGUb2j2vgLDyhTGtYIMDxh0L//RRsCb2Ky9Ubw2o8ss/4b3/LqsB8fzQrKP5rDh1MGgnl7l6A38jEQNWw==
+  dependencies:
+    react-native-swiper "^1.5.13"
+
 react-native-ionicons@^4.x:
   version "4.6.5"
   resolved "https://registry.yarnpkg.com/react-native-ionicons/-/react-native-ionicons-4.6.5.tgz#b792ec8896381e67ff237eba955e38afe7ceb7a4"
@@ -6794,6 +6801,13 @@ react-native-screens@^2.16.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.17.1.tgz#c3c0ac750af48741c5b1635511e6af2a27b74309"
   integrity sha512-B4gD5e4csvlVwlhf+RNqjQZ9mHTwe/iL3rXondgZxnKz4oW0QAmtLnLRKOrYVxoaJaF9Fy7jhjo//24/472APQ==
+
+react-native-swiper@^1.5.13:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-swiper/-/react-native-swiper-1.6.0.tgz#59fdbdf95addee49630312f27077622c27776819"
+  integrity sha512-OnkTTZi+9uZUgy0uz1I9oYDhCU3z36lZn+LFsk9FXPRelxb/KeABzvPs3r3SrHWy1aA67KGtSFj0xNK2QD0NJQ==
+  dependencies:
+    prop-types "^15.5.10"
 
 react-native-vector-icons@^6.6.0:
   version "6.7.0"

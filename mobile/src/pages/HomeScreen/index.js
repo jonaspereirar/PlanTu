@@ -26,13 +26,19 @@ const HomeScreen = () => {
     navigate('Profile');
   }, [navigate]);
 
+  const navigateWelcome = useCallback(() => {
+    navigate('Welcome');
+  }, [navigate]);
+
   return (
     <Container>
       <Background>
         <Header>
-          <HeaderTitle>
-            <Image source={logo} width={64} height={64} />
-          </HeaderTitle>
+          <TouchableOpacity onPress={navigateWelcome}>
+            <HeaderTitle>
+              <Image source={logo} width={64} height={64} />
+            </HeaderTitle>
+          </TouchableOpacity>
           <HeaderIcon>
             <TouchableOpacity style={{ marginRight: 30 }}>
               <Image source={NotifIcon} width={64} height={64} />

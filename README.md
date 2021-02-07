@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="CallLife" src="https://github.com/jonaspereirar/callingapp/blob/master/PlanTu.png?raw=true" width="800px" />
+    <img alt="CallLife" src="https://github.com/jonaspereirar/callingapp/blob/master/PlanTu.jpg?raw=true" width="800px" />
 
 </h1>
 <p align="center">Hackathon CCR 🚀🚀🚀</p>
